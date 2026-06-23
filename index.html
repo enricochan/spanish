@@ -528,22 +528,22 @@
         // Data Definitions
         const learningData = {
             alphabet: [
-                { word: 'A', translation: 'Apple / 蘋果 (Manzana)', emoji: '🍎', phonetic: 'ah' },
-                { word: 'B', translation: 'Bicycle / 單車 (Bicicleta)', emoji: '🚲', phonetic: 'beh' },
-                { word: 'C', translation: 'House / 房子 (Casa)', emoji: '🏠', phonetic: 'theh' },
-                { word: 'D', translation: 'Finger / 手指 (Dedo)', emoji: '👉', phonetic: 'deh' },
-                { word: 'E', translation: 'Elephant / 大象 (Elefante)', emoji: '🐘', phonetic: 'eh' },
-                { word: 'F', translation: 'Flower / 花朵 (Flor)', emoji: '🌸', phonetic: 'eh-feh' },
-                { word: 'G', translation: 'Cat / 貓咪 (Gato)', emoji: '🐱', phonetic: 'heh' },
-                { word: 'H', translation: 'Ice cream / 雪糕 (Helado)', emoji: '🍦', phonetic: 'ah-cheh (不發音)' },
-                { word: 'I', translation: 'Island / 小島 (Isla)', emoji: '🏝️', phonetic: 'ee' },
-                { word: 'J', translation: 'Giraffe / 長頸鹿 (Jirafa)', emoji: '🦒', phonetic: 'ho-tah' },
-                { word: 'K', translation: 'Koala / 樹熊 (Koala)', emoji: '🐨', phonetic: 'kah' },
-                { word: 'L', translation: 'Lemon / 檸檬 (Limón)', emoji: '🍋', phonetic: 'eh-leh' },
-                { word: 'M', translation: 'Hand / 手掌 (Mano)', emoji: '✋', phonetic: 'eh-meh' },
-                { word: 'N', translation: 'Cloud / 雲朵 (Nube)', emoji: '☁️', phonetic: 'eh-neh' },
-                { word: 'Ñ', translation: 'Pineapple / 菠蘿 (Piña)', emoji: '🍍', phonetic: 'eh-nyeh' },
-                { word: 'O', translation: 'Bear / 熊貓 (Oso)', emoji: '🐻', phonetic: 'oh' }
+                { word: 'A', translation: 'Apple / 蘋果 (Manzana)', emoji: '🍎', phonetic: 'ah', speak: 'a' },
+                { word: 'B', translation: 'Bicycle / 單車 (Bicicleta)', emoji: '🚲', phonetic: 'beh', speak: 'be' },
+                { word: 'C', translation: 'House / 房子 (Casa)', emoji: '🏠', phonetic: 'theh', speak: 'ce' },
+                { word: 'D', translation: 'Finger / 手指 (Dedo)', emoji: '👉', phonetic: 'deh', speak: 'de' },
+                { word: 'E', translation: 'Elephant / 大象 (Elefante)', emoji: '🐘', phonetic: 'eh', speak: 'e' },
+                { word: 'F', translation: 'Flower / 花朵 (Flor)', emoji: '🌸', phonetic: 'eh-feh', speak: 'efe' },
+                { word: 'G', translation: 'Cat / 貓咪 (Gato)', emoji: '🐱', phonetic: 'heh', speak: 'ge' },
+                { word: 'H', translation: 'Ice cream / 雪糕 (Helado)', emoji: '🍦', phonetic: 'ah-cheh (不發音)', speak: 'hache' },
+                { word: 'I', translation: 'Island / 小島 (Isla)', emoji: '🏝️', phonetic: 'ee', speak: 'i' },
+                { word: 'J', translation: 'Giraffe / 長頸鹿 (Jirafa)', emoji: '🦒', phonetic: 'ho-tah', speak: 'jota' },
+                { word: 'K', translation: 'Koala / 樹熊 (Koala)', emoji: '🐨', phonetic: 'kah', speak: 'ka' },
+                { word: 'L', translation: 'Lemon / 檸檬 (Limón)', emoji: '🍋', phonetic: 'eh-leh', speak: 'ele' },
+                { word: 'M', translation: 'Hand / 手掌 (Mano)', emoji: '✋', phonetic: 'eh-meh', speak: 'eme' },
+                { word: 'N', translation: 'Cloud / 雲朵 (Nube)', emoji: '☁️', phonetic: 'eh-neh', speak: 'ene' },
+                { word: 'Ñ', translation: 'Pineapple / 菠蘿 (Piña)', emoji: '🍍', phonetic: 'eh-nyeh', speak: 'eñe' },
+                { word: 'O', translation: 'Bear / 熊貓 (Oso)', emoji: '🐻', phonetic: 'oh', speak: 'o' }
             ],
             numbers: [
                 { word: 'Uno', translation: '1 (一)', emoji: '☝️', phonetic: 'oo-no' },
@@ -569,7 +569,7 @@
             ],
             greetings: [
                 { word: '¡Hola!', translation: 'Hello! 你好！', emoji: '👋', phonetic: 'oh-lah' },
-                { word: '¡Buenos días!', translation: 'Good morning! 早晨！', emoji: '🌅', phonetic: 'bweh-nohs dee-ahs' },
+                { word: '¡Buenos dias!', translation: 'Good morning! 早晨！', emoji: '🌅', phonetic: 'bweh-nohs dee-ahs' },
                 { word: '¡Buenas tardes!', translation: 'Good afternoon! 午安！', emoji: '☀️', phonetic: 'bweh-nahs tahr-dehs' },
                 { word: '¡Buenas noches!', translation: 'Good night! 晚安！', emoji: '🌙', phonetic: 'bweh-nahs noh-chehs' },
                 { word: '¿Cómo estás?', translation: 'How are you? 你好嗎？', emoji: '😊', phonetic: 'coh-moh ehs-tahs' },
@@ -579,10 +579,10 @@
             ],
             'self-intro': [
                 { word: '¿Cómo te llamas?', translation: 'What is your name? 你叫咩名？', emoji: '❓', phonetic: 'coh-moh teh yah-mahs' },
-                { word: 'Me llamo...', translation: 'My name is... 我叫...', emoji: '👤', phonetic: 'meh yah-moh' },
+                { word: 'Me llamo...', translation: 'My name is... 我叫...', emoji: '👤', phonetic: 'meh yah-moh', speak: 'Me llamo' },
                 { word: 'Mucho gusto', translation: 'Nice to meet you! 好高興認識你！', emoji: '🤝', phonetic: 'moo-cho goos-toh' },
                 { word: '¿Cuántos años tienes?', translation: 'How old are you? 你幾多歲？', emoji: '🎂', phonetic: 'cwahn-tohs ah-nyohs tyeh-nehs' },
-                { word: 'Tengo ... años', translation: 'I am ... years old. 我今年...歲。', emoji: '🔢', phonetic: 'tehn-go ... ah-nyohs' },
+                { word: 'Tengo ... años', translation: 'I am ... years old. 我今年...歲。', emoji: '🔢', phonetic: 'tehn-go ... ah-nyohs', speak: 'Tengo diez años' },
                 { word: 'Soy de Hong Kong', translation: 'I am from Hong Kong. 我來自香港。', emoji: '🇭🇰', phonetic: 'soy deh Hong Kong' }
             ],
             seasons: [
@@ -630,13 +630,15 @@
                     const cleanText = text.replace('¿', '').replace('?', '').replace('¡', '').replace('!', '').replace('...', '');
                     const utterance = new SpeechSynthesisUtterance(cleanText);
                     utterance.lang = 'es-ES'; // Set standard Spanish (Spain)
-                    utterance.rate = 0.85;     // Slightly slower for kids to hear clearly
+                    utterance.rate = 0.82;     // Slightly slower for kids to hear clearly
                     
                     // 2. Safari voice binding fix
                     try {
                         const voices = window.speechSynthesis.getVoices();
                         if (voices && voices.length > 0) {
-                            const esVoice = voices.find(voice => voice.lang && voice.lang.toLowerCase().startsWith('es'));
+                            // Find Spanish (Spain) or fallback to any Spanish voice
+                            let esVoice = voices.find(v => v.lang === 'es-ES' && (v.name.includes('Mónica') || v.name.includes('Jorge') || v.name.includes('Paulina')));
+                            if (!esVoice) esVoice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('es'));
                             if (esVoice) {
                                 utterance.voice = esVoice;
                             }
@@ -652,7 +654,7 @@
                         } catch (speakError) {
                             console.error("SpeechSynthesis speak execution failed", speakError);
                         }
-                    }, 50);
+                    }, 80);
 
                 } else {
                     showToast("🔴 您的瀏覽器不支援發音功能哦！", "bg-red-500 text-white");
@@ -730,6 +732,9 @@
                 const borderColors = ['border-esOrange', 'border-esYellow', 'border-esTeal', 'border-esPink', 'border-esBlue'];
                 const bColor = borderColors[index % borderColors.length];
                 
+                // Use phonetic TTS text for speaking letters/special phrases correctly
+                const speakText = item.speak || item.word;
+                
                 const cardHTML = `
                     <div class="flip-card h-52 w-full cursor-pointer" onclick="toggleCardFlip(this)">
                         <div class="flip-card-inner shadow-md rounded-3xl duration-500">
@@ -737,7 +742,7 @@
                             <div class="flip-card-front bg-white border-4 ${bColor} p-4 flex flex-col justify-between items-center h-full">
                                 <div class="w-full flex justify-between items-center">
                                     <span class="text-2xl">${item.emoji}</span>
-                                    <button onclick="event.stopPropagation(); playSpanishSound('${item.word}')" class="text-gray-400 hover:text-esOrange hover:scale-110 transition-all p-1.5 rounded-full bg-gray-50">
+                                    <button onclick="event.stopPropagation(); playSpanishSound('${speakText}')" class="text-gray-400 hover:text-esOrange hover:scale-110 transition-all p-1.5 rounded-full bg-gray-50">
                                         <i class="fa-solid fa-volume-high text-lg"></i>
                                     </button>
                                 </div>
@@ -1119,9 +1124,14 @@
             switchTab('home');
             selectTopic('alphabet');
             
-            // Warm speech synth triggering to ensure voices list is loaded
+            // Warm speech synth triggering to ensure voices list is loaded on Safari
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.getVoices();
+                if (window.speechSynthesis.onvoiceschanged !== undefined) {
+                    window.speechSynthesis.onvoiceschanged = function() {
+                        window.speechSynthesis.getVoices();
+                    };
+                }
             }
         };
     </script>
